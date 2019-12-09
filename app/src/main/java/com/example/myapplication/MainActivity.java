@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
                         }
                         else
                         {
-                            //Intent intent = new Intent(MainActivity.this, AddwordActivity.class);
-                            Intent intent = new Intent(MainActivity.this, WordlistActivity.class);
+                            Intent intent = new Intent(MainActivity.this, AddwordActivity.class);
+                            //Intent intent = new Intent(MainActivity.this, WordlistActivity.class);
                             intent.putExtra("ID", currentUserId);
                             intent.putExtra("NAME", text.getText().toString());
                             startActivity(intent);

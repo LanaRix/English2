@@ -47,8 +47,8 @@ public class WordlistActivity extends AppCompatActivity {
         //полготовительные действия перед работой с базой
         Bundle arguments = getIntent().getExtras();
         currentUserId=arguments.getInt("ID");
-        //chooseCategoryId=arguments.getString("CategoryID");
-        chooseCategoryId="2";
+        chooseCategoryId=arguments.getString("CategoryID");
+        //chooseCategoryId="2";
         databaseHelper = new DatabaseHelper(this);
         chooseCategoryIdI=0;
 
